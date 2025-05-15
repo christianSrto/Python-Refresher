@@ -37,7 +37,6 @@ print(f"Vegetables: {vegetables}")
 print(f"Person: {person}")
 print(f"Colors: {colors}")
 
-#Typecasting
 height = int(height)
 print(f"Height after typecasting: {height}")
 
