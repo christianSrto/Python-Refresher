@@ -55,3 +55,10 @@ employees = [["Name", "Age", "Job"],
              ["Squidward", 40, "Cashier"]]
 
 csv_path = "File Handling/output.csv"
+
+#new line = "" makes it so that employees is written without big gaps in output file 
+with open(file=csv_path, mode="w", newline="") as file:
+    writer = csv.writer(file)
+    for row in employees:
+        writer.writerow(row)
+    print("csv file was created")
